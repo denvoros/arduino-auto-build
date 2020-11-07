@@ -30,6 +30,8 @@ PROGRAMS+=("StowOnSideFarmer")
 # soft reset programs
 PROGRAMS+=("SoftReset-Regi")
 PROGRAMS+=("SoftReset-SwordsOfJustice")
+PROGRAMS+=("SoftResetUnattended-Regi")
+PROGRAMS+=("SoftResetUnattended-SwordsOfJustice")
 
 # beam reset and day skipper programs
 PROGRAMS+=("BeamReset")
