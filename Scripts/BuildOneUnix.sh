@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# NOTE: this script is a helper script that *should not be called directly*
+# please use the scripts provided in the root of this directory
 
 # get the MCU from the first argument
 # define the MCU 

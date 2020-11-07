@@ -33,13 +33,14 @@ if [ -z "$MCU" ]; then
 
     done
 
-    if [ "$MCU" == "1" ]; then MCU="at90usb1286"; fi
-    if [ "$MCU" == "2" ]; then MCU="atmega16u2"; fi
-    if [ "$MCU" == "3" ]; then MCU="atmega32u2"; fi
-
 fi
 
-# say what we're building for
+# if the boards were given by integer, we can update them here
+if [ "$MCU" == "1" ]; then MCU="at90usb1286"; fi
+if [ "$MCU" == "2" ]; then MCU="atmega16u2"; fi
+if [ "$MCU" == "3" ]; then MCU="atmega32u2"; fi
+
+# say what we're building for convenience
 echo "Ready to build for board: $MCU"
 echo ""
 

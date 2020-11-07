@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # This bash script builds all of the different hex files for the programs included
+# NOTE: this script is a helper script that *should not be called directly*
+# please use the scripts provided in the root of this directory
 
 # define the MCU 
 MCU=$1

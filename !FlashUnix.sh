@@ -34,11 +34,12 @@ if [ -z "$MCU" ]; then
 
     done
 
-    if [ "$MCU" == "1" ]; then MCU="at90usb1286"; fi
-    if [ "$MCU" == "2" ]; then MCU="atmega16u2"; fi
-    if [ "$MCU" == "3" ]; then MCU="atmega32u2"; fi
-
 fi
+
+# change the board type to the correct name if numbers were given
+if [ "$MCU" == "1" ]; then MCU="at90usb1286"; fi
+if [ "$MCU" == "2" ]; then MCU="atmega16u2"; fi
+if [ "$MCU" == "3" ]; then MCU="atmega32u2"; fi
 
 # define the program
 program=$2
@@ -91,4 +92,8 @@ else
     echo "No such program exists to flash. Exiting."
     exit
 fi
+
+echo -e "\033[1mFinished flashing $program.hex to $MCU! \033[0m"
+echo -e ""
+
 
