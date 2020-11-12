@@ -12,7 +12,7 @@ if [ -z "$MCU" ]; then
     echo "Please select your board type by either number or name:"
     echo "1 - at90usb1286  (for Teensy 2.0++)"
     echo "2 - atmega16u2   (for Arduino UNO R3)"
-    echo "3 - atmega32u2   (for Arduino Micro, and Teensy 2.0)"
+    echo "3 - atmega32u4   (for Arduino Micro, and Teensy 2.0)"
     
     CONTINUE=false
     read -p "Enter your board type: " MCU
@@ -39,7 +39,7 @@ fi
 # change the board type to the correct name if numbers were given
 if [ "$MCU" == "1" ]; then MCU="at90usb1286"; fi
 if [ "$MCU" == "2" ]; then MCU="atmega16u2"; fi
-if [ "$MCU" == "3" ]; then MCU="atmega32u2"; fi
+if [ "$MCU" == "3" ]; then MCU="atmega32u4"; fi
 
 # define the program
 program=$2
